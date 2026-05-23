@@ -4,6 +4,7 @@
 
 void generateGrid(){
     //just generating a table
+    //practicing for loops because i always forget lol (while loop dominance)
     const int ROWS = 3;
     const int COLUMNS = 3;
     for (unsigned int a = 0; a < ROWS; a++)
@@ -41,14 +42,15 @@ void newConcepts(){
     */
 
     //do while
-    int i = 1;
+    /* int i = 1;
     do
     {
         printf("%d. I'll loop until you input a number below 3\n",i);
         scanf("%d", &i); //input
     } while (i>3);
-    
-}
+        //this will execute while the condition is met
+    */
+        } 
 
 int main(){
     //generateGrid();
