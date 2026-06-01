@@ -50,7 +50,21 @@ void newConcepts(){
     } while (i>3);
         //this will execute while the condition is met
     */
-        } 
+        
+
+    //just read the input docs cuz it's quite extensive and an example here will tunnel vision yourself
+    int test_num;
+    printf("Enter a number: ");
+    scanf("%d", &test_num);
+
+    printf("Your number is: %d", test_num);
+
+    char first_name[30];
+    printf("\nEnter your first name: ");
+    scanf("%s", first_name);
+    printf("Good Morning %s!",first_name);
+
+}
 
 int main(){
     //generateGrid();
