@@ -2,13 +2,11 @@
 
 
 
-void generateGrid(){
+void generateGrid(int rows, int columns){
     //just generating a table
-    const int ROWS = 3;
-    const int COLUMNS = 3;
-    for (unsigned int a = 0; a < ROWS; a++)
+    for (unsigned int a = 0; a < rows; a++)
     {
-        for (unsigned int b = 0; b < COLUMNS; b++)
+        for (unsigned int b = 0; b < columns; b++)
         {
             printf(" |");
         }
@@ -84,7 +82,7 @@ void newConcepts(){
 }
 
 int main(){
-    //generateGrid();
-    newConcepts();
+    generateGrid(3,3);
+    //newConcepts();
     return 0;
 }
