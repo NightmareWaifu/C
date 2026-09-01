@@ -1,6 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 
+
+struct Node
+{
+    int data;
+    struct Node *next;
+};
 
 void generateGrid(){
     //just generating a table
@@ -53,16 +60,33 @@ void newConcepts(){
         
 
     //just read the input docs cuz it's quite extensive and an example here will tunnel vision yourself
-    int test_num;
-    printf("Enter a number: ");
-    scanf("%d", &test_num);
+    // int test_num;
+    // printf("Enter a number: ");
+    // scanf("%d", &test_num);
 
-    printf("Your number is: %d", test_num);
+    // printf("Your number is: %d", test_num);
 
-    char first_name[30];
-    printf("\nEnter your first name: ");
-    scanf("%s", first_name);
-    printf("Good Morning %s!",first_name);
+    // char first_name[30];
+    // printf("\nEnter your first name: ");
+    // scanf("%s", first_name);
+    // printf("Good Morning %s!",first_name);
+
+    //Linked Lists
+
+    //practicing allocating memory
+
+    int numbers = 5;
+    int* arr = (int*)malloc(5*sizeof(int));
+    arr[0] = 1;
+    arr[2] = 3;
+
+
+    for (int i = 0; i < numbers; i++)
+    {
+        printf("Index %d: %d\n", i, arr[i]);
+    }
+    
+    //printf("First Array Element: %d",arr[0]);
 
 }
 
