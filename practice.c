@@ -1,10 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 
 
+<<<<<<< HEAD
 void generateGrid(int rows, int columns){
     //just generating a table
     for (unsigned int a = 0; a < rows; a++)
+=======
+struct Node
+{
+    int data;
+    struct Node *next;
+};
+
+void generateGrid(){
+    //just generating a table
+    //practicing for loops because i always forget lol (while loop dominance)
+    const int ROWS = 3;
+    const int COLUMNS = 3;
+    for (unsigned int a = 0; a < ROWS; a++)
+>>>>>>> 71cca2d86c74f8f5092a94bcd3b5dea97efc3a6a
     {
         for (unsigned int b = 0; b < columns; b++)
         {
@@ -39,12 +55,17 @@ void newConcepts(){
     */
 
     //do while
+<<<<<<< HEAD
     /*
     int i = 1;
+=======
+    /* int i = 1;
+>>>>>>> 71cca2d86c74f8f5092a94bcd3b5dea97efc3a6a
     do
     {
         printf("%d. I'll loop until you input a number below 3\n",i);
         scanf("%d", &i); //input
+<<<<<<< HEAD
     } while (i>3); */
 
     //getting size & length of array
@@ -78,6 +99,41 @@ void newConcepts(){
     printf("%p\n", pointer);
     printf("%d\n", *pointer); //print the value at the address
 
+=======
+    } while (i>3);
+        //this will execute while the condition is met
+    */
+        
+
+    //just read the input docs cuz it's quite extensive and an example here will tunnel vision yourself
+    // int test_num;
+    // printf("Enter a number: ");
+    // scanf("%d", &test_num);
+
+    // printf("Your number is: %d", test_num);
+
+    // char first_name[30];
+    // printf("\nEnter your first name: ");
+    // scanf("%s", first_name);
+    // printf("Good Morning %s!",first_name);
+
+    //Linked Lists
+
+    //practicing allocating memory
+
+    int numbers = 5;
+    int* arr = (int*)malloc(5*sizeof(int));
+    arr[0] = 1;
+    arr[2] = 3;
+
+
+    for (int i = 0; i < numbers; i++)
+    {
+        printf("Index %d: %d\n", i, arr[i]);
+    }
+    
+    //printf("First Array Element: %d",arr[0]);
+>>>>>>> 71cca2d86c74f8f5092a94bcd3b5dea97efc3a6a
 
 }
 
