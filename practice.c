@@ -16,7 +16,7 @@ void generateGrid(){
     const int COLUMNS = 3;
     for (unsigned int a = 0; a < ROWS; a++)
     {
-        for (unsigned int b = 0; b < COLUMNS; b++)
+        for (unsigned int b = 0; b < columns; b++)
         {
             printf(" |");
         }
@@ -54,44 +54,44 @@ void newConcepts(){
     {
         printf("%d. I'll loop until you input a number below 3\n",i);
         scanf("%d", &i); //input
-    } while (i>3);
-        //this will execute while the condition is met
+    } while (i>3); */
+
+    //getting size & length of array
+   /*  int list_of_nums[] = {1,2,3}; //you can force array size with list_of_nums[3]
+    int size_of_list = sizeof(list_of_nums); //get the size of the array in bytes
+    int length_of_list = sizeof(list_of_nums) / sizeof(list_of_nums[0]); //assuming every element is of the same size
+    printf("Size: %d bytes\nLength: %d Elements", size_of_list, length_of_list);
+
+    //multi-dimensional arrays (columns & rows)
+
+    int matrix[2][3] = {{1,2,3},{4,5,6}}; //2 rows, 3 columns */
+    //visualisation
+    /* 
+    X X X
+    X X X
     */
-        
-
-    //just read the input docs cuz it's quite extensive and an example here will tunnel vision yourself
-    // int test_num;
-    // printf("Enter a number: ");
-    // scanf("%d", &test_num);
-
-    // printf("Your number is: %d", test_num);
-
-    // char first_name[30];
-    // printf("\nEnter your first name: ");
-    // scanf("%s", first_name);
-    // printf("Good Morning %s!",first_name);
-
-    //Linked Lists
-
-    //practicing allocating memory
-
-    int numbers = 5;
-    int* arr = (int*)malloc(5*sizeof(int));
-    arr[0] = 1;
-    arr[2] = 3;
-
-
-    for (int i = 0; i < numbers; i++)
-    {
-        printf("Index %d: %d\n", i, arr[i]);
-    }
+   //standard array/matrix logic so imma not put it so better not forget it!!
+   // [row][column] so [0][1] is yk yea it's logic so you CANT forget it literally the same thing for every language
+   // 3D arrays what the fuck!!! [block][row][column]
     
-    //printf("First Array Element: %d",arr[0]);
+
+   //strings - array of characters %s
+   //char stringify[] = "Hello, World!"; 
+   // {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'}; equivalant, we use \0 to end the string "Null Terminating Character" MUST!!
+
+    //memory addresses
+    //location of where the variable is stored on the computer
+    int where_am_i = 10;
+    printf("%p\n", &where_am_i);
+    int* pointer = &where_am_i; //or int *pointer
+    printf("%p\n", pointer);
+    printf("%d\n", *pointer); //print the value at the address
+
 
 }
 
 int main(){
-    //generateGrid();
-    newConcepts();
+    generateGrid(3,3);
+    //newConcepts();
     return 0;
 }
